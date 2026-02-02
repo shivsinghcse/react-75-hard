@@ -82,3 +82,245 @@ By understanding the strengths and capabilities of both ReactJS and Next.js, dev
 ### Google developed:
     - Angular for websites
     - Go lang for backend    
+
+
+# Day-02
+
+> **Setting up ReactJS for your project is straightforward and requires just a few steps**.
+
+**Let's dive into the process**
+
+
+### Step 1: Prerequisites
+
+Before you start, ensure you have Node.js and npm (Node Package Manager) installed on your machine. You can download and install them from nodejs.org.
+
+
+### Step 2: Create a New React Project
+
+You can initialize a new React project using Create React App, a tool built by the React team to set up a new React project with a single command. Open your terminal and run the following command:
+
+
+`npx create-react-app my-react-app`
+
+
+> Replace my-react-app with your preferred project name.
+
+
+### Step 3: Navigate to Your Project
+
+Once the project is created, navigate into your project directory:
+
+
+`cd my-react-app`
+
+
+### Step 4: Run the Development Server
+
+You can start the development server by running the following command:
+
+`npm start`
+
+> To run react we need a server, so with the help of NodeJS we create a server in our computer which runs on localhost (127.0.0.1). NodeJS compiles our react-application.
+
+## 🔹 What is **npx**?
+
+**npx** = **Node Package eXecute**
+
+It comes with **npm (v5.2+)** and is used to **run Node packages without installing them globally**.
+
+### ✅ Why npx exists
+
+Before npx:
+
+```bash
+npm install -g create-react-app
+create-react-app myApp
+```
+
+Problems:
+
+* Global version conflicts
+* Manual updates
+* Polluted global space
+
+### ✅ With npx
+
+```bash
+npx create-react-app myApp
+```
+
+What happens:
+
+* Downloads the package **temporarily**
+* Runs it
+* Deletes it after execution (if not needed again)
+
+### 🔥 Key benefits
+
+* No global installs
+* Always uses **latest version**
+* Cleaner system
+
+### 🧠 Interview one-liner
+
+> **npx is used to execute Node packages directly without installing them globally.**
+
+---
+
+## 🔹 What is **`package.json`** in a React app?
+
+`package.json` is the **heart of your React project** 💓
+
+It stores:
+
+* Project metadata
+* Dependencies
+* Scripts
+* Configurations
+
+### 📄 Example
+
+```json
+{
+  "name": "my-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+```
+
+### 🔑 Important sections
+
+#### 1️⃣ `dependencies`
+
+Libraries required at **runtime**
+
+```json
+"react", "react-dom", "axios"
+```
+
+#### 2️⃣ `devDependencies`
+
+Libraries needed only for **development**
+
+```json
+"eslint", "webpack", "jest"
+```
+
+#### 3️⃣ `scripts`
+
+Commands you run:
+
+```bash
+npm start
+npm run build
+npm test
+```
+
+### 🧠 Interview one-liner
+
+> **package.json defines project info, dependencies, and runnable scripts.**
+
+---
+
+## 🔹 What is **`package-lock.json`** in a React app?
+
+`package-lock.json` is the **exact dependency snapshot** 📸
+
+### ❓ Why do we need it?
+
+Different machines may install **different versions** of the same package if versions are flexible (`^`, `~`).
+
+### 📌 What it does
+
+* Locks **exact versions**
+* Ensures **same node_modules** on all machines
+* Improves install speed
+* Prevents “works on my machine” bugs 😅
+
+### ⚠️ Important rule
+
+✅ **Commit `package-lock.json` to Git**
+❌ **Do not edit it manually**
+
+### 🧠 Interview one-liner
+
+> **package-lock.json ensures consistent dependency versions across environments.**
+
+---
+
+## 🔹 What is the **`src` folder** in a React app?
+
+`src` = **Source code of your React application** 🧠
+
+Everything that makes your app **work & render** lives here.
+
+### 📂 Common structure
+
+```
+src/
+├── App.js
+├── index.js
+├── components/
+├── pages/
+├── hooks/
+├── services/
+├── styles/
+└── assets/
+```
+
+### 🔑 Important files
+
+#### `index.js`
+
+```js
+ReactDOM.createRoot(document.getElementById("root"))
+  .render(<App />);
+```
+
+➡ Entry point of React
+
+#### `App.js`
+
+```js
+function App() {
+  return <h1>Hello React</h1>;
+}
+```
+
+➡ Root component
+
+### 🧠 Rules of `src`
+
+* Only files inside `src` can be imported
+* Webpack/Babel compile this folder
+* Clean separation of logic & UI
+
+### 🧠 Interview one-liner
+
+> **The src folder contains the complete source code of the React application.**
+
+---
+
+## 🔥 Quick Comparison (Interview Gold)
+
+| File                | Purpose                             |
+| ------------------- | ----------------------------------- |
+| `npx`               | Run packages without global install |
+| `package.json`      | Project config & dependencies       |
+| `package-lock.json` | Exact dependency versions           |
+| `src/`              | Application source code             |
+
+
+
+
+
+> We never **share** or **push** **node_modules** folder.
