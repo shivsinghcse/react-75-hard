@@ -1,0 +1,25 @@
+:root {
+  --bg-dark: #020617;
+  --primary-blue: #1E88E5;
+  --secondary-green: #22C55E;
+  --accent-yellow: #FACC15;
+
+  --text-white: #FFFFFF;
+  --text-muted: #CBD5E1;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+

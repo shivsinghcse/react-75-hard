@@ -1,0 +1,43 @@
+.logo {
+  width: 220px;  
+  transition: transform 0.3s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.menu {
+text-decoration: none;
+font-size: 1.1rem;
+font-weight: 500;
+color: #CBD5E1;
+padding: 1rem 2.5rem;
+display: inline-block;
+transition: 0.3s ease;                      
+}
+
+.menu:hover{
+  text-decoration-line: underline;
+  text-decoration-color: #CBD5E1;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  color: #22C55E;
+  transform: translateY(-1px);
+}
+
+.talk-to-us {
+  background-color: #FACC15;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #020617;
+  border-radius: 0.6rem;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.talk-to-us:hover {
+  background-color: #d8b113;
+  transform: scale(0.98);
+}
