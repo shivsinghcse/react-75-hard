@@ -1279,3 +1279,19 @@ Importing and exporting components in React allows you to organize your code int
 ## hight
 - h-full : 100% keep position fixed
 - h-screen - 100vh : works without position fixed
+
+## public folder
+- / refers to public folder in vite-react
+## react-router
+- nested route do not give / to children
+- children in react router 
+
+
+
+
+
+
+
+### Buynest
+- []- Make 404 creative
+- [] - Orders admin tfoot - total order value to return to order total return 
