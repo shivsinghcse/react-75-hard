@@ -1248,3 +1248,34 @@ Once you've exported your components from their respective files, you can import
 
 ## Conclusion
 Importing and exporting components in React allows you to organize your code into reusable and modular pieces, making it easier to maintain and scale your applications. Understanding the different ways to import and export components gives you the flexibility to structure your code in a way that best suits your project's needs.
+
+
+
+# Day-28 to 74 E-commerce project
+
+## What we will learn in this
+- useStae
+- useEffect
+- redux
+- firebase
+- form validation
+- http request
+- payment gateway
+- shared/reusable component
+- Auth
+- etc
+
+
+## Notes 
+- 1st design Admin pannel
+
+## Libraries
+- tailwindcss
+- react-router-dom
+
+## routing 
+- always write routing code in App.jsx
+
+## hight
+- h-full : 100% keep position fixed
+- h-screen - 100vh : works without position fixed
