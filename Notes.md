@@ -1284,7 +1284,8 @@ Importing and exporting components in React allows you to organize your code int
 - / refers to public folder in vite-react
 ## react-router
 - nested route do not give / to children
-- children in react router 
+- children in react router
+- react-router-dom provides useLocation() hook which return an object which have pathname property whivh gives path 
 
 
 
